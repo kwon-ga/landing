@@ -1,0 +1,38 @@
+@font-face {
+  font-family: "SpoqaHanSansNeo-Regular";
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SpoqaHanSansNeo-Regular.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root {
+  --color-gray: rgba(118, 118, 118, 1);
+  --color-white: rgba(255, 255, 255, 1);
+  --color-black: rgba(0, 0, 0, 1);
+  --color-orange: rgba(217, 118, 82, 1);
+  --color-cream: rgba(242, 233, 216, 1);
+  --color-navy: rgba(38, 49, 64, 1);
+
+  --font-size-xl: 3rem; /* 48px */
+  --font-size-lg: 2.25rem; /* 36px */
+  --font-size-default: 1rem; /* 16px */
+  --font-size-sm: 0.875rem; /* 14px */
+}
+
+@media (max-width: 768px) {
+  :root {
+    --font-size-xl: 1.7142rem; /* 24px */
+    --font-size-lg: 1.1428rem; /* 16px */
+    --font-size-default: 1rem; /* 14px */
+    --font-size-sm: 0.8571rem; /* 12px */
+  }
+
+  .mobile-break::after {
+    content: "\A";
+    white-space: pre;
+  }
+  .pc-break {
+    display: none;
+  }
+}
